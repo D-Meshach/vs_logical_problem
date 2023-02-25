@@ -12,7 +12,7 @@ namespace Logical
         {
             String i = "y";
             while (i == "y") {
-                Console.WriteLine("Enter option \n 1)Fibonacci Series \n 2)Perfect Number \n3)Prime Number  \nEnter option here-");
+                Console.WriteLine("Enter option \n 1)Fibonacci Series \n 2)Perfect Number \n3)Prime Number \n4)Reverse Number \nEnter option here-");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -20,6 +20,7 @@ namespace Logical
                     case 1: fibonacci_series.fibonacci(); break;
                     case 2:Perfect_number.perfect_number(); break;
                     case 3:Prime_number.prime_number();break;
+                    case 4:reverse_number.reverse();break;
                     default: Console.WriteLine("Enter a valid statement"); break;
 
                 }
